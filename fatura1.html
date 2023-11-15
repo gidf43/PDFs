@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatura</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        .address {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+        .esquerda {
+            width: 150%;
+        }
+        .canto {
+            width: 100%;
+            text-align: right;
+        }
+
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        .info-table th, .info-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 12px;
+        }
+        .info-table th {
+            background-color: #f2f2f2;
+        }
+        .observations {
+            margin-top: 20px;
+        }
+        .observations h3 {
+            text-align: left;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .observations p {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        .sub-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .sub-table th, .sub-table td {
+            border: 0px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+
+        .center-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-size: 12px;
+        }
+        .yellow-border {
+            border: 2px solid yellow;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+
+         
+
+    .biaxo {
+        display: flex;
+        justify-content: space-between;
+        margin-top:50px;
+    }
+
+    .tabela {
+        width: 45%;
+    }
+
+    .tabela-esquerda {
+        display: block;
+        width: 100px;
+        height: 80px;
+    }
+
+    .tabela-direita {
+        display: inline-block;
+    
+    }
+
+    table {
+        width: 100%;
+        
+    }
+
+    th, td {
+        border: 0px solid black;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+
+
+    footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            font-size: 10px; 
+        }
+
+    .directaS{
+        text-align:right;
+        margin-left:30px;
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<br>
+<div class="address">
+        <div class="esquerda">
+            <img src="{{public_path("img/pdf/calunga.png")}}" style="width: 110px; margin-top:5px; margin-left:10px " alt="">
+            <br>
+            <b>CALUNGASOFT</b>
+            <div>VIANA, RUA:0439,GS</div>
+            <div><b>Contribuinte:</b> 509442013</div>
+        </div>
+        
+        <div class="canto">
+            <b>Exmo.(s) Sr.(s)</b>
+            <div>MUNDO & MAQUINAS - PRESTAÇAO DE SERVIÇOS E COMERCIO GERAL, (SU), LDA</div>
+            <div>Porto Seco, Viana - Luanda - Angola</div>
+            <div>Luanda</div>
+        </div>
+    </div>
+
+        <br>
+      
+            <h4 style="margin-right: auto;">Factura Pró-Forma n.º <span>PP T01P2023/1</span>  <span style="text-align: left; margin-left: 360px;">Original</span></h4>
+     
+        <hr>
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Vencimento</th>
+                    <th>Contribuinte</th>
+                    <th>V/ Ref</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10-21-2092</td>
+                    <td>......</td>
+                    <td>627368273</td>
+                    <td>PPT021527/3</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <div class="observations">
+            <h3>Observações</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, et. Ratione, accusamus. Facere impedit iure vel fugiat iste voluptates nemo quos soluta quod dolor distinctio voluptatem, animi ullam ut eius.</p>
+        </div>
+        <br>
+        <hr>
+        <table class="sub-table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Descrição</th>
+                    <th>P. Uni. </th>
+                    <th>Uni.</th>
+                    <th>Qtd</th>
+                    <th>Taxa</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>demov.5</td>
+                    <td>Caderno A4 Preto</td>
+                    <td>1,95 Kz </td>
+                    <td>Uni </td>
+                    <td>2 </td>
+                    <td>14% </td>
+                    <td>3,90 Kz</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <div class="center-box">
+            <h3 class="yellow-border">Documento emitido para fins de Formação. Não tem validade fiscal.</h1>
+        </div>
+    </div>
+
+
+    <div class="biaxo">
+        <div class="tabela tabela-esquerda">
+            <table>
+            <thead>
+                <tr>
+                    
+                    <th>Taxa</th>
+                    <th>Base</th>
+                    <th>Iva </th>
+                    
+                </tr>
+               
+            </thead>
+                <tbody>
+                    <tr>
+                        <td>30%</td>
+                        <td>10%</td>
+                        <td>20%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tabela tabela-direita">
+            <table>
+                <thead>
+                    <tr>
+                        <th><b>Sumario:</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S/IVA: <span class="directaS"><b>0.10%</b></span></td>
+                        <td>IVA:   <span class="directaS"><b>5.0%</b></span></td>
+                        <td>Total: <span class="directaS"><b>5.10%</b></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <footer>
+        Documento Eletrónico Vendus - 2023-01-11 08:00 UTC
+        <br>
+        <a href="https://www.vendus.co.ao/v/b15214d5449784f4463794d7a493466485535636b6b3d503c">https://www.vendus.co.ao/v/b15214d5449784f4463794d7a493466485535636b6b3d503c</a>
+    </footer>
+
+</body>
+</html>
